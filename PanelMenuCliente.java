@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 public class PanelMenuCliente extends JPanel {
 
 	FondoPantalla fondo;
-	private String nombre = "/imagen/clientes.jpg";
+	private String nombre = "/clientes.jpg";
 
 	public PanelMenuCliente(JFrame frame) {
 		super();

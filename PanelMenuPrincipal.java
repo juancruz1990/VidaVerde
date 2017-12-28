@@ -11,7 +11,7 @@ import javax.swing.border.Border;
 public class PanelMenuPrincipal extends JPanel {
 
 	FondoPantalla fondo;
-	private String nombre = "/imagen/biogreen.jpg";
+	private String nombre = "/biogreen.jpg";
 
 	public PanelMenuPrincipal(JFrame frame) {
 		super();
