@@ -293,7 +293,7 @@ public class Cliente {
 							+ cliente.getNombre()
 							+ "' or apellido = '"
 							+ cliente.getApellido()
-							+ "') and (visible = 'verdadero'));");
+							+ "') and (visible = 'visible'));");
 			while (rs.next()) {
 				persona = new Cliente();
 				persona.setIdCliente(Integer.parseInt(rs.getString("id")));

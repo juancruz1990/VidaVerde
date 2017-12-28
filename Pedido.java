@@ -100,7 +100,7 @@ public class Pedido {
 					+ "', '"
 					+ 0
 					+ "','"
-					+ altaPedido.getIdNotaPedido() + "', 'verdadero')");
+					+ altaPedido.getIdNotaPedido() + "', 'visible')");
 			JOptionPane.showMessageDialog(null,
 					"Se ha registrado Exitosamente", "Información",
 					JOptionPane.INFORMATION_MESSAGE);

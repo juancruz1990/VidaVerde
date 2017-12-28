@@ -99,7 +99,7 @@ public class Producto {
 					+ "', '"
 					+ altaProducto.getTipoProducto()
 					+ "', '"
-					+ altaProducto.getPrecio() + "', 'verdadero');");
+					+ altaProducto.getPrecio() + "', 'visible');");
 			JOptionPane.showMessageDialog(null,
 					"Se ha registrado Exitosamente", "Información",
 					JOptionPane.INFORMATION_MESSAGE);
@@ -121,7 +121,7 @@ public class Producto {
 		try {
 			Statement estatuto = conex.getConeccion().createStatement();
 			ResultSet rs = estatuto
-					.executeQuery("SELECT * FROM biogreen.producto where ((visible = 'verdadero') and (codigo = '"
+					.executeQuery("SELECT * FROM biogreen.producto where ((visible = 'visible') and (codigo = '"
 							+ productoBuscado.getCodigo()
 							+ "' or nombre= '"
 							+ productoBuscado.getNombreProducto()
@@ -194,7 +194,7 @@ public class Producto {
 			Statement estatuto = conex.getConeccion().createStatement();
 			ResultSet rs = estatuto
 					.executeQuery("SELECT * FROM biogreen.producto where id= '"
-							+ identy + "'and visible = 'verdadero';");
+							+ identy + "'and visible = 'visible';");
 			while (rs.next()) {
 				aux = new Producto();
 				aux.setIdProducto(Integer.parseInt(rs.getString("id")));
