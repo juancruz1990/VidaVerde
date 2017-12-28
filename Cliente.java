@@ -153,7 +153,7 @@ public class Cliente {
 			Statement buscar = conex.getConeccion().createStatement();
 			ResultSet rs = buscar
 					.executeQuery("Select dni from biogreen.cliente where dni = "
-							+ h);
+							+ dni);
 			if (rs.next()) {
 				esta = true;
 			}
@@ -251,7 +251,7 @@ public class Cliente {
 		try {
 			Statement estatuto = conex.getConeccion().createStatement();
 			ResultSet rs = estatuto
-					.executeQuery("SELECT * FROM biogreen.cliente where visible =  'verdadero';");
+					.executeQuery("SELECT * FROM biogreen.cliente where visible =  'visible';");
 
 			while (rs.next()) {
 				persona = new Cliente();
